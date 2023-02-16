@@ -1,27 +1,9 @@
 #include <iostream>
-#include<cstdlib>
+#include <cstdlib>
 
 using namespace std;
 
-bool leap = false;
-bool huluculu = false;
-bool bulukulu = false;
-
-void years(){
-    if(leap or huluculu or bulukulu){
-        if(leap){
-            cout << "This is a leap year" << endl;
-        }
-        if(huluculu){
-            cout << "This year we have a huluculu festival" << endl;
-        }
-        if(bulukulu){
-            cout << "This year we have a bulukulu festival" << endl;
-        }
-    }else{
-        cout << "This is a ordinary year" << endl;
-    }
-}
+void years(bool leap, bool huluculu, bool bulukulu);
 
 int main(){
     int ano;
@@ -32,6 +14,9 @@ int main(){
         cout << "Digite um ano maior que 2000: ";
         cin >> ano;  
         
+        bool leap = false;
+        bool huluculu = false;
+        bool bulukulu = false;
         float resto4 = ano % 4;
         float resto100 = ano % 100;
         float resto400 = ano % 400;
@@ -48,7 +33,7 @@ int main(){
             if(resto15 == 0){
                 huluculu = true;
             }
-            years(); 
+            years(leap, huluculu, bulukulu); 
             continue;   
         } else{
             cout << "Por favor, ";
@@ -56,4 +41,20 @@ int main(){
         }
     }
     return 0;
+}
+
+void years(bool leap, bool huluculu, bool bulukulu) {
+    if(leap or huluculu or bulukulu){
+        if(leap){
+            cout << "This is a leap year" << endl;
+        }
+        if(huluculu){
+            cout << "This year we have a huluculu festival" << endl;
+        }
+        if(bulukulu){
+            cout << "This year we have a bulukulu festival" << endl;
+        }
+    }else{
+        cout << "This is a ordinary year" << endl;
+    }
 }
