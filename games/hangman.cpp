@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 bool letra_existe(char chute, const string PALAVRA_SECRETA);
