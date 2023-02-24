@@ -16,6 +16,7 @@ int main() {
     while(nao_acertou && nao_enforcou) {
         for(char letra : PALAVRA_SECRETA){
             if(chutou[letra]){
+                
                 cout << letra << " ";
             }
             else{
