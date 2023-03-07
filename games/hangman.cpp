@@ -13,10 +13,14 @@ int main() {
     bool nao_acertou = true;
     bool nao_enforcou = true;
 
+    cout << " ___________________" << endl << endl;
+    cout << "|   Jogo da Forca   |" << endl;
+    cout << " ___________________" << endl << endl;
+
     while(nao_acertou && nao_enforcou) {
         for(char letra : PALAVRA_SECRETA){
             if(chutou[letra]){
-                
+
                 cout << letra << " ";
             }
             else{
