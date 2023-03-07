@@ -3,7 +3,7 @@
  
 using namespace std;
 
-int main() {
+int main(){
     string letra = "#";
     string espaco = " ";
     int num;

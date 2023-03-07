@@ -9,7 +9,7 @@ int main(){
     int ano;
     cout << "*** Verificar se o ano é bissexto e suas festividade ***" << endl;
 
-    while(true){
+    while(true) {
         cout << endl;
         cout << "Digite um ano maior que 2000: ";
         cin >> ano;  

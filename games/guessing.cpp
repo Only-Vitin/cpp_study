@@ -18,7 +18,7 @@ int main(){
     cout << "* Bem-vindos ao jogo da adivinhação *" << endl;
     cout << "*************************************" << endl;
 
-    while(true){
+    while(true) {
         cout << "--------- Escolha o seu nível ---------" << endl;
         cout << "| (F) Fácil | (M) Médio | (D) Difícil |" << endl;
         cout << "---------------------------------------" << endl;
